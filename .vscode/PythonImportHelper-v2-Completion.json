@@ -64,6 +64,38 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -144,6 +176,14 @@
         "documentation": {}
     },
     {
+        "label": "ModelSerializer",
+        "importPath": "rest_framework.serializers",
+        "description": "rest_framework.serializers",
+        "isExtraImport": true,
+        "detail": "rest_framework.serializers",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -200,6 +240,14 @@
         "documentation": {}
     },
     {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "views",
         "importPath": "about",
         "description": "about",
@@ -233,6 +281,22 @@
         "documentation": {}
     },
     {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
         "label": "Response",
         "importPath": "rest_framework.response",
         "description": "rest_framework.response",
@@ -262,6 +326,38 @@
         "description": "rest_framework.views",
         "isExtraImport": true,
         "detail": "rest_framework.views",
+        "documentation": {}
+    },
+    {
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.views",
+        "documentation": {}
+    },
+    {
+        "label": "ListAPIView",
+        "importPath": "rest_framework.generics",
+        "description": "rest_framework.generics",
+        "isExtraImport": true,
+        "detail": "rest_framework.generics",
+        "documentation": {}
+    },
+    {
+        "label": "RetrieveUpdateAPIView",
+        "importPath": "rest_framework.generics",
+        "description": "rest_framework.generics",
+        "isExtraImport": true,
+        "detail": "rest_framework.generics",
+        "documentation": {}
+    },
+    {
+        "label": "DestroyAPIView",
+        "importPath": "rest_framework.generics",
+        "description": "rest_framework.generics",
+        "isExtraImport": true,
+        "detail": "rest_framework.generics",
         "documentation": {}
     },
     {
@@ -397,11 +493,11 @@
         "documentation": {}
     },
     {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
+        "label": "views",
+        "importPath": "work",
+        "description": "work",
         "isExtraImport": true,
-        "detail": "django.shortcuts",
+        "detail": "work",
         "documentation": {}
     },
     {
@@ -895,7 +991,7 @@
         "kind": 5,
         "importPath": "Portfolio.urls",
         "description": "Portfolio.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('home/', include('home.urls')),\n    path('about/', include('about.urls'))\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('home/', include('home.urls')),\n    path('about/', include('about.urls')),\n    path('work/', include('work.urls'))\n]",
         "detail": "Portfolio.urls",
         "documentation": {}
     },
@@ -909,12 +1005,93 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "work.migrations.0001_initial",
+        "description": "work.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Work',\n            fields=[\n                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(max_length=100)),",
+        "detail": "work.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "work.migrations.0002_auto_20210407_1937",
+        "description": "work.migrations.0002_auto_20210407_1937",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('work', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='work',\n            name='work_link',\n            field=models.CharField(max_length=200),\n        ),",
+        "detail": "work.migrations.0002_auto_20210407_1937",
+        "documentation": {}
+    },
+    {
         "label": "WorkConfig",
         "kind": 6,
         "importPath": "work.apps",
         "description": "work.apps",
         "peekOfCode": "class WorkConfig(AppConfig):\n    name = 'work'",
         "detail": "work.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Work",
+        "kind": 6,
+        "importPath": "work.models",
+        "description": "work.models",
+        "peekOfCode": "class Work(models.Model):\n    title = models.CharField(max_length=100)\n    content = models.CharField(max_length=100)\n    image = models.ImageField(upload_to=\"work_image\")\n    work_content = models.CharField(max_length=200)\n    work_link = models.CharField(max_length = 200)\n    def __str_(self):\n        return self.title",
+        "detail": "work.models",
+        "documentation": {}
+    },
+    {
+        "label": "WorkSerializer",
+        "kind": 6,
+        "importPath": "work.serializers",
+        "description": "work.serializers",
+        "peekOfCode": "class WorkSerializer(ModelSerializer):\n    class Meta:\n        model = Work\n        fields = \"__all__\"",
+        "detail": "work.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "work.urls",
+        "description": "work.urls",
+        "peekOfCode": "urlpatterns = [\n    path('create/', views.CreateWorkAPIView.as_view(), name='create'),\n    path('list/', views.WorkListAPIView.as_view(), name='list'),\n    path('update/<int:pk>', views.WorkUpdateAPIView.as_view(), name='update'),\n    path('delete/<int:pk>', views.WorkDeleteAPIView.as_view(), name='delete')\n]",
+        "detail": "work.urls",
+        "documentation": {}
+    },
+    {
+        "label": "CreateWorkAPIView",
+        "kind": 6,
+        "importPath": "work.views",
+        "description": "work.views",
+        "peekOfCode": "class CreateWorkAPIView(APIView):\n    def post(self,request):\n        serializer = WorkSerializer(data=request.data)\n        if serializer.is_valid():\n            serializer.save()\n            return Response(serializer.data, status=status.HTTP_201_CREATED)\n        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)\nclass WorkListAPIView(ListAPIView):\n    queryset = Work.objects.all()\n    serializer_class = WorkSerializer",
+        "detail": "work.views",
+        "documentation": {}
+    },
+    {
+        "label": "WorkListAPIView",
+        "kind": 6,
+        "importPath": "work.views",
+        "description": "work.views",
+        "peekOfCode": "class WorkListAPIView(ListAPIView):\n    queryset = Work.objects.all()\n    serializer_class = WorkSerializer\nclass WorkUpdateAPIView(RetrieveUpdateAPIView):\n    queryset = Work.objects.all()\n    serializer_class = WorkSerializer\nclass WorkDeleteAPIView(DestroyAPIView):\n    queryset = Work.objects.all()\n    serializer_class = WorkSerializer",
+        "detail": "work.views",
+        "documentation": {}
+    },
+    {
+        "label": "WorkUpdateAPIView",
+        "kind": 6,
+        "importPath": "work.views",
+        "description": "work.views",
+        "peekOfCode": "class WorkUpdateAPIView(RetrieveUpdateAPIView):\n    queryset = Work.objects.all()\n    serializer_class = WorkSerializer\nclass WorkDeleteAPIView(DestroyAPIView):\n    queryset = Work.objects.all()\n    serializer_class = WorkSerializer",
+        "detail": "work.views",
+        "documentation": {}
+    },
+    {
+        "label": "WorkDeleteAPIView",
+        "kind": 6,
+        "importPath": "work.views",
+        "description": "work.views",
+        "peekOfCode": "class WorkDeleteAPIView(DestroyAPIView):\n    queryset = Work.objects.all()\n    serializer_class = WorkSerializer",
+        "detail": "work.views",
         "documentation": {}
     },
     {
